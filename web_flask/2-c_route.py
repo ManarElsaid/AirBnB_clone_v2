@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-#a script that starts a Flask web application
-#Your web application must be listening on 0.0.0.0, port 5000
+"""a script that starts a Flask web application
+Your web application must be listening on 0.0.0.0, port 5000"""
 
 from flask import Flask
 
@@ -20,9 +20,9 @@ def hbnb():
 
 
 @app.route("/c/<text>", strict_slashes=False)
-def text():
-    """display “C ” followed by the value of the text variable"""
-    return ("C {}".format(text.replace("_", " "))
+def display_text():
+    """display C  followed by the value of the text variable"""
+    return ("C {}".format(text.replace("_", " ")))
 
 
 if __name__ == "__main__":
