@@ -36,7 +36,7 @@ def display_python(text="is cool"):
 def number(n):
     """ display “n is a number” only if n is an integer"""
     if isinstance(n, int):
-        return ("n is a number")
+        return ("{} is a number".format(n))
 
 
 if __name__ == "__main__":
