@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,8 +12,8 @@
                             {% for city in state.cities | sort(attribute='name') %}
                             <li>{{city.id}}: <b>{{city.name}}</b></li>
                             {% endfor %}
-            {% endfor %}
                     </ul>
+            {% endfor %}
         </ul>
     </body>
 </html>
