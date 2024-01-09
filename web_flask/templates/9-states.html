@@ -5,7 +5,8 @@
     </head>
     <body>
         {% if case == "id" %}
-            <h1>State: </h1>
+            <h1>State: {{state}}</h1>
+            <h3>Cities</h3>
             <ul>
             <li>{{state.id}}: <b>{{state.name}}</b>
                     <ul>
