@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """a script that starts a Flask web application"""
 
-from turtle import mode
-from unittest import case
 from flask import Flask, render_template
 from models import storage
 from models.state import State
@@ -12,7 +10,7 @@ app = Flask(__name__)
 
 @app.route('/states', strict_slashes=False)
 def list_states():
-    """render html page that display states and related cities"""
+    """render html page that display states"""
     states = storage.all(State)
     return render_template("7-states_list.html", states=states)
 
